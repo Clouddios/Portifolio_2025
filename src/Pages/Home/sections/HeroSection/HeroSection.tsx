@@ -5,7 +5,7 @@ import Avatar from "../../../../assets/images/avatar.png"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-import CV from "../../../../assets/pdfs/Open.pdf"
+//import CV from "../../../../assets/pdfs/Open.pdf"
 
 const HeroSection: React.FC = () => {
 
@@ -33,19 +33,19 @@ const HeroSection: React.FC = () => {
         },
     }));
 
-    const handleDownload = () => {
-        console.log("download")
-        // Create a link element
-        const link = document.createElement('a');
-        link.href = CV
-        link.download = 'Curriculo Dev.pdf'; // Set the download attribute to specify the file name
-        // Append the link to the body
-        document.body.appendChild(link);
-        // Trigger the click event
-        link.click();
-        // Remove the link from the body
-        document.body.removeChild(link);
-    };
+    // const handleDownload = () => {
+    //     console.log("download")
+    //     // Create a link element
+    //     const link = document.createElement('a');
+    //     link.href = CV
+    //     link.download = 'Curriculo Dev.pdf'; // Set the download attribute to specify the file name
+    //     // Append the link to the body
+    //     document.body.appendChild(link);
+    //     // Trigger the click event
+    //     link.click();
+    //     // Remove the link from the body
+    //     document.body.removeChild(link);
+    // };
 
     const handleEmail = () => {
         const emailAddress = 'example@example.com';
@@ -80,6 +80,7 @@ const HeroSection: React.FC = () => {
                                 <Grid container spacing={3} display="flex" justifyContent="center">
                                     <Grid item xs={10} md={4}>
                                     <StyledButton onClick={() => window.open("https://github.com/Clouddios")}>
+                                            <DownloadIcon />
                                        <Typography>Meu GitHub</Typography>
                                     </StyledButton>
                                     </Grid>
