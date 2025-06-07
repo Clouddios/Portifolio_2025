@@ -48,9 +48,9 @@ const HeroSection: React.FC = () => {
     // };
 
     const handleEmail = () => {
-        const emailAddress = 'example@example.com';
-        const subject = 'Subject';
-        const body = 'Hello! I saw your portfolio...';
+        const emailAddress = 'claudio132009@gmail.com';
+        const subject = 'Contato - Portifolio';//
+        const body = 'Ola, estava vendo seu Portifolio...';
 
         const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.open(mailtoLink);
